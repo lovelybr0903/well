@@ -1,0 +1,508 @@
+@charset "UTF-8";
+
+* {
+  margin: 0 auto;
+  padding: 0;
+  font-family: "맑은 고딕";
+  color: #535353;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+a {
+  display: block;
+}
+img {
+  border: 0;
+  vertical-align: middle;
+}
+.coupon {
+  width: 100%;
+  height: 20px;
+  background-color: #000;
+  font-size: 12px;
+  line-height: 20px;
+  color: #fff;
+  text-align: center;
+}
+.wrap {
+  margin: 0 auto;
+}
+
+header {
+  position: relative;
+  width: 1320px;
+  height: 120px;
+  display: flex;
+}
+.logo {
+  position: absolute;
+  width: 280px;
+}
+.join {
+  position: relative;
+  width: 1000px;
+  height: 120px;
+  display: flex;
+  align-items: end;
+  font-weight: bold;
+}
+.fa-solid {
+  position: absolute;
+  top: 85px;
+  right: 360px;
+  color: #6110f5;
+}
+.j-inner {
+  display: flex;
+  gap: 30px;
+  justify-content: space-between;
+  margin-left: 600px;
+}
+input {
+  width: 100px;
+}
+
+/* 메뉴 */
+.menu {
+  position: absolute;
+  left: 300px;
+  width: 500px;
+  height: 20px;
+  margin-top: 10px;
+  z-index: 1;
+  font-size: 20px;
+  font-weight: bold;
+}
+.nav {
+  position: relative;
+  display: flex;
+  margin-left: 100px;
+}
+
+.nav > li {
+  position: relative;
+}
+.nav > li > a {
+  position: relative;
+  width: 150px;
+  height: 40px;
+  /* background-color: rgba(0, 0, 0, 0.2); */
+  line-height: 40px;
+  text-align: center;
+  transition: all 0.5s;
+}
+.nav > li > a:hover {
+  background-color: #6110f5;
+  font-weight: bold;
+  color: #fff;
+}
+
+/* sub menu */
+.s-menu {
+  position: relative;
+  height: 0;
+  overflow: hidden;
+  transition: all 0.5s;
+}
+.s-menu li {
+  position: relative;
+}
+.s-menu a {
+  position: relative;
+  width: 150px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  transition: all 0.5s;
+}
+.nav > li:hover .s-menu {
+  height: 120px;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+.s-menu a:hover {
+  background-color: #6110f5;
+  font-weight: bold;
+  color: #fff;
+}
+
+/* 슬라이드 */
+.slide {
+  position: relative;
+  width: 100%;
+  height: 600px;
+  margin-top: 49px;
+  overflow: hidden;
+}
+.s-list {
+  position: relative;
+  width: 300%;
+  height: 600px;
+  display: flex;
+}
+.s-list li {
+  position: relative;
+  display: flex;
+}
+.s-list img {
+  position: relative;
+  width: 1920px;
+  height: 600px;
+  object-fit: cover;
+}
+/* 아이콘 */
+.cont {
+  margin: 0 auto;
+  width: 1320px;
+}
+.mainicon {
+  position: relative;
+  margin-bottom: 30px;
+  z-index: 2;
+}
+.i-inner {
+  display: flex;
+  justify-content: space-between;
+}
+.mainicon img {
+  width: 200px;
+  margin-top: 30px;
+}
+.i-inner a:hover {
+  filter: grayscale(100%);
+}
+
+/* 새로나온상품 */
+.n-title {
+  width: 1320px;
+  margin-bottom: 20px;
+  padding: 10px;
+  background-color: #eee;
+  font-size: 18px;
+  font-weight: bold;
+  color: #6110f5;
+  text-align: center;
+}
+.new {
+  position: relative;
+  display: flex;
+  margin-bottom: 60px;
+}
+.n-inner {
+  position: relative;
+  display: flex;
+  gap: 20px;
+}
+.n-inner img {
+  margin-bottom: 20px;
+}
+/* 새로나온상품 호버 */
+.img-wrap {
+  position: relative;
+  display: inline-block;
+}
+
+.img-wrap img {
+  width: 300px;
+  height: 300px;
+  display: block;
+}
+
+.overlay1 {
+  position: absolute;
+  right: 0;
+  bottom: 20px;
+  left: 0;
+  height: 100%;
+  display: flex;
+  gap: 20px;
+  align-items: flex-end;
+  justify-content: center;
+  pointer-events: none;
+}
+
+.overlay1 img {
+  width: 40px;
+  height: 40px;
+}
+
+.icon1 {
+  margin: 0 20px;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+.img-wrap:hover .icon1 {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.img-wrap:hover .heart1 {
+  transition-delay: 0.1s;
+}
+
+.img-wrap:hover .cart1 {
+  transition-delay: 0.2s;
+}
+
+.img-wrap > h3 h4 h5:hover {
+  font-weight: bold;
+}
+
+a:hover .img-wrap > img {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* 인기상품 */
+.g-title {
+  margin-bottom: 20px;
+  padding: 10px;
+  background-color: #eee;
+  font-size: 18px;
+  font-weight: bold;
+  color: #6110f5;
+  text-align: center;
+}
+.good1 {
+  position: relative;
+  display: flex;
+}
+.g-inner1 {
+  display: flex;
+  gap: 10px;
+  justify-content: space-between;
+  padding-bottom: 40px;
+}
+.g-inner1 img {
+  margin-bottom: 20px;
+}
+.good2 {
+  position: relative;
+  display: flex;
+}
+.g-inner2 {
+  display: flex;
+  gap: 10px;
+  justify-content: space-between;
+  padding-bottom: 60px;
+}
+.g-inner2 img {
+  margin-bottom: 20px;
+}
+/* 인기상품 호버 */
+.image-wrapper {
+  position: relative;
+  display: inline-block;
+}
+
+.image-wrapper img {
+  width: 240px;
+  height: 240px;
+  display: block;
+}
+
+.overlay {
+  position: absolute;
+  right: 0;
+  bottom: 20px;
+  left: 0;
+  height: 100%;
+  display: flex;
+  gap: 20px;
+  align-items: flex-end;
+  justify-content: center;
+  pointer-events: none;
+}
+
+.overlay img {
+  width: 40px;
+  height: 40px;
+}
+
+.icon {
+  width: 40px;
+  height: 40px;
+  margin: 0 5px;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+.image-wrapper:hover .icon {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.image-wrapper:hover .heart-icon {
+  transition-delay: 0.1s;
+}
+
+.image-wrapper:hover .cart-icon {
+  transition-delay: 0.2s;
+}
+
+a:hover .image-wrapper > img {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* 후기 */
+.v-title {
+  width: 1320px;
+  margin-bottom: 20px;
+  padding: 10px;
+  background-color: #eee;
+  font-size: 18px;
+  font-weight: bold;
+  color: #6110f5;
+  text-align: center;
+}
+.view {
+  position: relative;
+  display: flex;
+  margin-bottom: 60px;
+}
+.v-inner {
+  display: flex;
+  gap: 10px;
+  justify-content: space-between;
+}
+/* 배너 */
+.ban {
+  width: 1320px;
+  display: flex;
+  margin-bottom: 60px;
+}
+.ban a img {
+  transition: box-shadow 0.3s ease;
+}
+.ban a img:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* 푸터 */
+.btlogo {
+  position: absolute;
+  margin-left: 100px;
+  padding-right: 100px;
+  object-fit: cover;
+}
+footer {
+  position: relative;
+}
+.f-inner {
+  position: relative;
+  width: 100%;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 30px;
+  background-color: rgba(0, 0, 0, 0.1);
+  color: #fff;
+}
+.btmenu {
+  position: relative;
+  width: 100%;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.site1 {
+  position: relative;
+  width: 400px;
+  display: flex;
+  align-items: first baseline;
+  justify-content: center;
+  margin-left: 800px;
+  padding: 20px 0;
+  font-size: 16px;
+}
+.site1 li {
+  padding-right: 20px;
+  border-right: 1px solid #333;
+}
+.site1-inner {
+  margin-left: 700px;
+  padding: 20px 0;
+  line-height: 30px;
+}
+.site1 > li:last-child {
+  border: none;
+}
+.site1 a:hover {
+  font-weight: bold;
+}
+.copy {
+  position: relative;
+  align-items: center;
+  margin-top: 10px;
+  margin-left: 800px;
+}
+
+.site {
+  position: relative;
+  top: 200px;
+  width: 20%;
+  height: 100%;
+  display: flex;
+  gap: 5px;
+  flex-direction: column;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+.sns {
+  position: relative;
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 10px;
+  margin-right: 200px;
+}
+
+.familysite {
+  margin-right: 200px;
+}
+.familysite select {
+  position: relative;
+  width: 150px;
+  height: 30px;
+}
+
+/* 얼랏 */
+#alert-box {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  background-color: white;
+  border: 1px solid black;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+  z-index: 6;
+}
+#alert-box p {
+  font-size: 20px;
+}
+#overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 5;
+}
+#close-alert {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #6110f5;
+  color: white;
+  border: none;
+  cursor: pointer;
+}

@@ -1,0 +1,332 @@
+* {
+  margin: 0 auto;
+  padding: 0;
+  font-family: "맑은 고딕";
+  color: #535353;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+a {
+  display: block;
+}
+img {
+  border: 0;
+  vertical-align: middle;
+}
+.wrap {
+  margin: 0 auto;
+}
+header {
+  position: relative;
+  width: 1320px;
+  /* left: 200px; */
+  height: 120px;
+  display: flex;
+}
+.logo {
+  position: absolute;
+  width: 280px;
+  padding-top: 20px;
+}
+/* 메뉴 */
+.topmenu {
+  width: 1320px;
+  margin-bottom: 30px;
+}
+.menu {
+  position: absolute;
+  left: 300px;
+  height: 30px;
+  margin-top: 100px;
+  z-index: 1;
+  font-size: 20px;
+  font-weight: bold;
+}
+.nav {
+  position: relative;
+  display: flex;
+}
+.nav > li {
+  position: relative;
+}
+.nav > li > a {
+  position: relative;
+  width: 150px;
+  height: 40px;
+  /* background-color: rgba(0, 0, 0, 0.2); */
+  line-height: 40px;
+  text-align: center;
+  transition: all 0.5s;
+}
+.nav > li > a:hover {
+  background-color: #6110f5;
+  font-weight: bold;
+  color: #fff;
+}
+
+/* sub menu */
+.s-menu {
+  position: relative;
+  height: 0;
+  overflow: hidden;
+  transition: all 0.5s;
+}
+.s-menu li {
+  position: relative;
+}
+.s-menu a {
+  position: relative;
+  width: 150px;
+  height: 35px;
+  line-height: 35px;
+  text-align: center;
+  transition: all 0.5s;
+}
+.nav > li:hover .s-menu {
+  height: 120px;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+.s-menu a:hover {
+  background-color: #6110f5;
+  font-weight: bold;
+  color: #fff;
+}
+.input {
+  position: absolute;
+  bottom: 40px;
+  left: 800px;
+  width: 100px;
+  display: flex;
+}
+.input img {
+  width: 22px;
+  margin-left: 5px;
+}
+
+/* 콘텐츠 */
+#contents {
+  width: 1320px;
+  padding-top: 130px;
+}
+.title {
+  font-size: 36px;
+  font-weight: bold;
+  color: #6110f5;
+  text-align: center;
+}
+.subtitle {
+  margin-top: 50px;
+}
+.total {
+  display: flex;
+}
+button {
+  margin-right: 30px;
+  margin-bottom: 20px;
+  padding: 5px 40px;
+  border: 1px solid #333;
+  background-color: #fff;
+  font-size: 18px;
+  border-radius: 5px;
+}
+button:first-child {
+  background-color: #6110f5;
+  font-weight: bold;
+  color: #fff;
+  z-index: 2;
+}
+button:hover {
+  background-color: #6110f5;
+  font-weight: bold;
+  color: #fff;
+}
+.list {
+  display: flex;
+}
+.list > li:first-child {
+  margin-right: 900px;
+}
+.list a:hover {
+  font-weight: bold;
+}
+
+/* 푸터 */
+.btlogo {
+  position: absolute;
+  margin-left: 100px;
+  padding-right: 100px;
+  object-fit: cover;
+}
+footer {
+  position: relative;
+}
+.f-inner {
+  position: relative;
+  width: 100%;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 30px;
+  background-color: rgba(0, 0, 0, 0.1);
+  color: #fff;
+}
+.btmenu {
+  position: relative;
+  width: 100%;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.site1 {
+  position: relative;
+  width: 400px;
+  display: flex;
+  align-items: first baseline;
+  justify-content: center;
+  margin-left: 800px;
+  padding: 20px 0;
+  font-size: 16px;
+}
+.site1 li {
+  padding-right: 20px;
+  border-right: 1px solid #333;
+}
+.site1-inner {
+  margin-left: 700px;
+  padding: 20px 0;
+  line-height: 30px;
+}
+.site1 > li:last-child {
+  border: none;
+}
+.site1 a:hover {
+  font-weight: bold;
+}
+.copy {
+  position: relative;
+  align-items: center;
+  margin-top: 10px;
+  margin-left: 800px;
+}
+
+/* 복붙 */
+.site {
+  position: relative;
+  top: 200px;
+  width: 20%;
+  height: 100%;
+  display: flex;
+  gap: 5px;
+  flex-direction: column;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+.sns {
+  position: relative;
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 10px;
+  margin-right: 200px;
+}
+
+.familysite {
+  margin-right: 200px;
+}
+.familysite select {
+  position: relative;
+  width: 150px;
+  height: 30px;
+}
+
+/*  상품모음 */
+
+.good1 {
+  position: relative;
+  width: 1320px;
+  margin-top: 50px;
+}
+.g-inner1 {
+  display: flex;
+  gap: 10px;
+  justify-content: space-between;
+  padding-bottom: 40px;
+}
+.g-inner1 img {
+  margin-bottom: 20px;
+}
+
+/* 마우스호버 */
+.good2 {
+  position: relative;
+  width: 1320px;
+  margin-top: 50px;
+}
+.g-inner2 {
+  display: flex;
+  gap: 10px;
+  justify-content: space-between;
+  padding-bottom: 40px;
+}
+.g-inner2 img {
+  margin-bottom: 20px;
+}
+
+.image-wrapper {
+  position: relative;
+}
+
+.image-wrapper img {
+  width: 240px;
+  height: 240px;
+  display: block;
+}
+
+.overlay {
+  position: absolute;
+  right: 0;
+  bottom: 20px;
+  left: 0;
+  height: 100%;
+  display: flex;
+  gap: 20px;
+  align-items: flex-end;
+  justify-content: center;
+  pointer-events: none;
+}
+
+.overlay img {
+  width: 40px;
+  height: 40px;
+}
+
+.icon {
+  width: 40px;
+  height: 40px;
+  margin: 0 5px;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+.image-wrapper:hover .icon {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.image-wrapper:hover .heart-icon {
+  transition-delay: 0.1s;
+}
+
+.image-wrapper:hover .cart-icon {
+  transition-delay: 0.2s;
+}
+
+a:hover .image-wrapper > img {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
